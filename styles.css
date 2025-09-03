@@ -1,0 +1,109 @@
+:root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #27ae60;
+            --warning: #f39c12;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .sidebar {
+            background-color: var(--primary);
+            color: white;
+            height: 100vh;
+            position: fixed;
+            padding-top: 60px;
+        }
+        
+        .sidebar a {
+            color: white;
+            padding: 15px 20px;
+            display: block;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .sidebar a:hover {
+            background-color: var(--secondary);
+            padding-left: 25px;
+        }
+        
+        .sidebar a.active {
+            background-color: var(--secondary);
+            border-left: 4px solid var(--accent);
+        }
+        
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            padding-top: 80px;
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-dashboard {
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .card-dashboard:hover {
+            transform: translateY(-5px);
+        }
+        
+        .status-badge {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .status-aberto {
+            background-color: #ffeaa7;
+            color: #d35400;
+        }
+        
+        .status-andamento {
+            background-color: #81ecec;
+            color: #00b894;
+        }
+        
+        .status-concluido {
+            background-color: #55efc4;
+            color: #00b894;
+        }
+        
+        .priority-high {
+            border-left: 4px solid var(--accent);
+        }
+        
+        .priority-medium {
+            border-left: 4px solid var(--warning);
+        }
+        
+        .priority-low {
+            border-left: 4px solid var(--success);
+        }
+        
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding-top: 20px;
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+        }
