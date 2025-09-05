@@ -47,3 +47,7 @@ Relatórios gerenciais customizáveis, permitindo análises de desempenho, custo
 5. Interface e Usabilidade
 O sistema terá interface web responsiva, permitindo acesso via desktop e dispositivos móveis. Painéis de controle dinâmicos mostrarão indicadores-chave, como chamados em andamento, faturamento mensal, desempenho de técnicos e status financeiro dos orçamentos.
 
+
+
+
+
